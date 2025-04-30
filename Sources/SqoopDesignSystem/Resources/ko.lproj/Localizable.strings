@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  SqoopDesignSystem
+
+  Created by Greem on 11/8/24.
+  
+*/
+
+"Edit" = "편집";
+"Reset" = "초기화";
+"Done" = "완료";
+"Delete" = "삭제하기";
+"Cancel" = "취소";
+
+"Total %d" = "총 %d 곡";
+"YouTube로 이동" = "YouTube로 이동";
+"It will take" = "약 %d 분이";
+"about N minutes" = "소요될 예정이에요";
+"Extracting01" = "어플을 나가도 스쿱은 계속돼요";
+"Extracting02" = "";
+"Extracting11" = "열심히 스쿱하고 있어요";
+"Extracting12" = "조금만 기다려주세요";
+"Extracting21" = "기다리는 동안";
+"Extracting22" = "다른 일을 하고 오셔도 좋아요";
+"WatchOriginalVideo" = "원본 영상 보러가기";

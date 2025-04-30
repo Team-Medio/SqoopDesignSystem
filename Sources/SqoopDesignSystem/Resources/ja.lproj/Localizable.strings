@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  SqoopDesignSystem
+
+  Created by Greem on 11/8/24.
+  
+*/
+"Edit" = "編集";
+"Reset" = "初期化";
+"Done" = "完了";
+"Delete" = "削除";
+"Cancel" = "取消";
+
+"Total %d" = "合計 %d 曲";
+"YouTube로 이동" = "YouTubeへ移動";
+"It will take" = "約 %d 分";
+"about N minutes" = "かかる予定です。";
+"Extracting01" = "アプリを閉じてもスコープは続きます。";
+"Extracting02" = "";
+"Extracting11" = "頑張ってスコープしています。";
+"Extracting12" = "少々お待ちください。";
+"Extracting21" = "待っている間に";
+"Extracting22" = "他のことをしてきても大丈夫です。";
+"WatchOriginalVideo" = "元の動画を見る";

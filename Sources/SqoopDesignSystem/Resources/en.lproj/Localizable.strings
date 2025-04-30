@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  SqoopDesignSystem
+
+  Created by Greem on 11/8/24.
+  
+*/
+"Edit" = "Edit";
+"Reset" = "Reset";
+"Done" = "Done";
+"Delete" = "Delete";
+"Cancel" = "Cancel";
+
+"Total %d" = "Total %d";
+
+"It will take" = "It will take";
+"about N minutes" = "about %d minutes";
+"YouTube로 이동" = "Go to YouTube";
+"Extracting01" = "Even if you leave the app,";
+"Extracting02" = "Sqoop will continue";
+"Extracting11" = "We're working hard on Sqooping";
+"Extracting12" = "Please wait a moment";
+"Extracting21" = "Feel free to do something else";
+"Extracting22" = "while you wait";
+"WatchOriginalVideo" = "View Original Video";
