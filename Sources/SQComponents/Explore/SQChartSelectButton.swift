@@ -39,7 +39,6 @@ public struct SQChartSelectButton: View {
                     .stroke(selected ? Color.textBrand : Color.bdGrey1, lineWidth: 1)
                 )
         }
-        .disabled(!selected)
     }
 }
 
