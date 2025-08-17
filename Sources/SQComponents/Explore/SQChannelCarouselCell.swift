@@ -67,48 +67,46 @@ private struct Default: View {
     var body: some View {
         ZStack {
             Color.bgGrey3
+            
             Content()
                 .padding([.top, .leading], 8)
+            
+            Text("\(ranking)")
+                .foregroundStyle(Color.textPrimary)
+                .font(.system(size: 32, weight: .bold))
+                .italic()
+                .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
+                .padding(8)
         }
     }
     
     private func Content() -> some View {
-        HStack(alignment: .top, spacing: 0) {
-            VStack {
-                Text("\(ranking)")
-                    .foregroundStyle(Color.textPrimary)
-                    .font(.system(size: 40, weight: .bold, design: .none))
-                    .italic()
-                Spacer()
-            }
+        VStack(alignment: .center, spacing: 0) {
+            SQAsyncImage(imageURLString: thumbnailImageUrl, width: 92, height: 92)
+                .frame(width: 148, height: 92)
+                .frame(width: 92, height: 92)
+                .clipped()
+                .clipShape(Circle())
+                .contentShape(Circle())
             
-            VStack {
-                SQAsyncImage(imageURLString: thumbnailImageUrl, width: 92, height: 92)
-                    .frame(width: 148, height: 92)
-                    .frame(width: 92, height: 92)
-                    .clipped()
-                    .clipShape(Circle())
-                    .contentShape(Circle())
-                
-                Text(title)
-                    .fontWithLineHeight(.body02(weight: .medium))
-                    .lineLimit(1)
-                    .multilineTextAlignment(.leading)
-                    .foregroundStyle(Color.textPrimary)
-                
-                Text("누적스쿱 \(sqoopCount)회")
-                    .fontWithLineHeight(.caption01)
-                    .lineLimit(2)
-                    .multilineTextAlignment(.leading)
-                    .foregroundStyle(Color.textTertiary)
-                
-                Spacer()
-            }
-            .padding(.top, 8)
-            .padding(.leading, 3)
+            Text(title)
+                .fontWithLineHeight(.body02(weight: .medium))
+                .lineLimit(1)
+                .multilineTextAlignment(.leading)
+                .foregroundStyle(Color.textPrimary)
+                .padding(.top, 14)
+            
+            Text("누적스쿱 \(sqoopCount)회")
+                .fontWithLineHeight(.caption01)
+                .lineLimit(2)
+                .multilineTextAlignment(.leading)
+                .foregroundStyle(Color.textTertiary)
             
             Spacer()
         }
+        .padding(.top, 8)
+        .padding(.leading, 3)
+        .frame(width: 92)
     }
 }
 
