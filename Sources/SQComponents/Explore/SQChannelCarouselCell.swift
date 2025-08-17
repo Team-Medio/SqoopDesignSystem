@@ -73,11 +73,14 @@ private struct Default: View {
     }
     
     private func Content() -> some View {
-        HStack {
-            Text("\(ranking)")
-                .foregroundStyle(Color.textPrimary)
-                .font(.system(size: 40, weight: .bold, design: .none))
-                .italic()
+        HStack(alignment: .top, spacing: 0) {
+            VStack {
+                Text("\(ranking)")
+                    .foregroundStyle(Color.textPrimary)
+                    .font(.system(size: 40, weight: .bold, design: .none))
+                    .italic()
+                Spacer()
+            }
             
             VStack {
                 SQAsyncImage(imageURLString: thumbnailImageUrl, width: 92, height: 92)
@@ -103,6 +106,8 @@ private struct Default: View {
             }
             .padding(.top, 8)
             .padding(.leading, 3)
+            
+            Spacer()
         }
     }
 }
