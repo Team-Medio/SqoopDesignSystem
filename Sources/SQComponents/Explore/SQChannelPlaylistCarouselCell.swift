@@ -9,15 +9,20 @@ import SwiftUI
 
 public struct SQChannelPlaylistCarouselCell: View {
     
-    var title: String = ""
-    var thumbnailImageUrl: String = ""
-    var channelName: String = ""
-    
+    var title: String
+    var thumbnailImageUrl: String
+    var channelName: String
     public let tapAction: () -> Void
     
     public init(
+        title: String,
+        thumbnailImageUrl: String,
+        channelName: String,
         tapAction: @escaping () -> Void
     ) {
+        self.title = title
+        self.thumbnailImageUrl = thumbnailImageUrl
+        self.channelName = channelName
         self.tapAction = tapAction
     }
     
