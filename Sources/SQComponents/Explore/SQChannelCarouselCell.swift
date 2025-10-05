@@ -7,8 +7,6 @@
 
 import SwiftUI
 
-
-
 public struct SQChannelCarouselCell: View {
     
     public enum Variant {
