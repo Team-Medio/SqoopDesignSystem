@@ -9,15 +9,20 @@ import SwiftUI
 
 public struct SQChannelPlaylistCarouselCell: View {
     
-    var title: String = ""
-    var thumbnailImageUrl: String = ""
-    var channelName: String = ""
+    public struct Variant {
+        var title: String
+        var thumbnailImageUrl: String
+        var channelName: String
+    }
     
+    public let variant: Variant
     public let tapAction: () -> Void
     
     public init(
+        variant: Variant,
         tapAction: @escaping () -> Void
     ) {
+        self.variant = variant
         self.tapAction = tapAction
     }
     
@@ -26,9 +31,9 @@ public struct SQChannelPlaylistCarouselCell: View {
             tapAction()
         } label: {
             CarouselCell(
-                thumbnailImageUrl: thumbnailImageUrl,
-                title: title,
-                channelName: channelName
+                thumbnailImageUrl: variant.thumbnailImageUrl,
+                title: variant.title,
+                channelName: variant.channelName
             )
             
         }
