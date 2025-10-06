@@ -74,6 +74,7 @@ private struct CarouselCell: View {
                 .lineLimit(2)
                 .multilineTextAlignment(.leading)
                 .foregroundStyle(Color.textPrimary)
+                .frame(height: 38, alignment: .top)
                 .padding(.top, 9)
             
             Text(channelName)
