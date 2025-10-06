@@ -57,35 +57,32 @@ private struct CarouselCell: View {
     
     var body: some View {
         ZStack {
-            Color.bgGrey3
+            Color.bgGreyTransparent2
             
             Content()
         }
     }
     
     private func Content() -> some View {
-        VStack(alignment: .center, spacing: 0) {
+        VStack(alignment: .leading, spacing: 0) {
             SQAsyncImage(imageURLString: thumbnailImageUrl, width: 134, height: 78)
                 .clipped()
                 .clipShape(RoundedRectangle(cornerRadius: 4.66))
             
-            Text(channelName)
-                .fontWithLineHeight(.body02(weight: .medium))
-                .lineLimit(1)
+            Text(title)
+                .font(.body02(.medium))
+                .lineLimit(2)
                 .multilineTextAlignment(.leading)
                 .foregroundStyle(Color.textPrimary)
                 .padding(.top, 9)
             
-            Text(title)
+            Text(channelName)
                 .fontWithLineHeight(.caption02)
-                .lineLimit(2)
+                .lineLimit(1)
                 .multilineTextAlignment(.leading)
                 .foregroundStyle(Color.textSecondary)
-            
-            Spacer()
         }
-        .padding(.top, 8)
-        .padding(.leading, 3)
-        .frame(width: 92)
+        .padding(.top, 12)
+        .frame(width: 134)
     }
 }
